@@ -1,0 +1,41 @@
+PROBLEM #4
+
+Please create a simple program using recursive method that can give an output
+the n-th number of Tribonaci sequence. Below is the first 8 numbers of the Tribonaci sequence:
+
+1 1 1 3 5 9 17 31 ...
+
+it's like a fibonacci sequence, but instead of 2, it uses 3 values when summing
+
+==================================
+----EXAMPLE : PROGRAM INPUT-------
+==================================
+4
+==================================
+----EXAMPLE : PROGRAM OUTPUT------
+==================================
+3			// return the 4-th number from Tribonaci sequences, which is 3
+
+
+
+
+==================================
+----EXAMPLE : PROGRAM INPUT-------
+==================================
+5
+==================================
+----EXAMPLE : PROGRAM OUTPUT------
+==================================
+5			// return the 5-th number from Tribonaci sequences, which is 5
+
+
+
+
+==================================
+----EXAMPLE : PROGRAM INPUT-------
+==================================
+6
+==================================
+----EXAMPLE : PROGRAM OUTPUT------
+==================================
+9			// return the 6-th number from Tribonaci sequences, which is 9
