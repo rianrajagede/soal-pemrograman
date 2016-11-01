@@ -1,8 +1,9 @@
 /*
     PROBLEM #3
     If you run the program, the function check(s) will return false value
-    (it represents with 0 integer in command window) find the appropiate
-    value of S that make it will return true value.
+    (it represented by 0 integer in command window) find the appropiate
+    value of S with length more than 5 character that will
+    make check function return true value.
     And please explain, why does it work?
 */
 

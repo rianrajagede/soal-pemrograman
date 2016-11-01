@@ -3,6 +3,7 @@
     You want to create a subprogram to determine
     whether the given two rectangles overlap each other or not.
     Choose the best parameter(s) and the data type for the return value!
+    And please explain, why do you choose it?
     (just fill in the blank)
 */
 
