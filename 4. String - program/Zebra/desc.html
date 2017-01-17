@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+div#exp
+{
+	 border: 1px solid #0cc;
+	 background: #adc;
+	 padding: 5px;
+	 margin-bottom: 1em;
+}
+
+div#warn
+{
+	 border: 1px solid #900;
+	 background: #d22;
+	 padding: 5px;
+}
+
+.code
+{
+	 font-family: "Courier New", monospace;
+	 font-size: 12pt;
+}
+
+.bold
+{
+	 font-weight: bold;
+}
+
+pre.io
+{
+	 border: 1px solid #ccc;
+	 background: white;
+	 padding: 5px;
+}
+
+pre.code
+{
+	 border: 1px solid #ccc;
+	 background: white;
+	 padding: 5px;
+	 margin-left: 30px;
+}
+
+body
+{
+	 background-color: #FFFFCC;
+	 font-size: 12pt;
+	 font-family: verdana;
+	 margin: 15px;
+	 padding: 15px;
+}
+
+h1
+{
+	 text-align: center;
+	 font-family: times, "times new roman";
+	 font-size: 18pt;
+}
+
+h2
+{
+	 font-size: 12pt;
+	 font-family: garamond, verdana, arial;
+	 margin-top: 30px;
+}
+
+h3
+{
+	 font-size: 12pt;
+	 font-family: garamond, verdana, arial;
+	 margin-top: 0px;
+}
+
+p
+{
+	 text-align: justify;
+	 line-height: 1.5em;
+}
+
+hr
+{
+	 text-align: left;
+	 width: 10%;
+}
+
+table#header
+{
+	 width: 100%;
+	 font-family: garamond, arial, verdana;
+	 font-size: 12pt;
+}
+
+table#header td.judul
+{
+	 text-align: right;
+	 font-weight: bold;
+}
+
+table#header td
+{
+	 padding: 0px 5px 0px 5px;
+	 width: 50%;
+}
+
+</style><meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Zebra Cross</title>
+</head>
+
+<body>
+<center>
+<table cellpadding="20" width="100%">
+<tbody><tr>
+<td id="Base">
+
+<!-- title -->
+<h1>Zebra Cross</h1>
+
+<!-- author -->
+<div id="penulis">Rian Adam Rajagede</div>
+<!-- header -->
+<table id = "header">
+	 <tbody>
+	 <tr>
+		<td class="judul"> Batas <i>Run-time</i>:</td>
+		<td>1 detik / test-case</td>
+	</tr>
+	<tr>
+		 <td class="judul"> Batas Memori:</td>
+		<td>32 MB</td>
+	 </tr>
+</tbody></table>
+
+<!-- problem statement -->
+<div id="problem">
+<h2>DESKRIPSI SOAL</h2><p>Petruk kini mengembangkan sebuah aplikasi canggih pengolah citra digital. Aplikasi tersebut rencananya akan digunakan utuk membantu tuna netra ketika hendak menyeberang jalan. Aplikasi Petruk bekerja dengan mencari zebra cross terdekat dari lokasi pengguna. Petruk yang masih baru belajar programming meminta bantuan Anda untuk membantu menyempurnakan aplikasinya dengan menebak sebuah gambar masukan, apakah itu zebra cross atau bukan. Zebra cross adalah sebuah kumpulan garis yang:</p>
+<p>- Hanya terdiri dari dua warna</p>
+<p>- Setiap kolom hanya terdiri dari satu warna</p>
+<p>- Kedua warna muncul secara bergantian pada tiap kolom.</p>
+
+<p>arti dari poin ketiga adalah terdapat warna X yang hanya muncul pada kolom genap dan terdapat warna Y yang hanya muncul pada kolom ganjil.</p>
+
+<!-- format input -->
+<h2>PETUNJUK MASUKAN</h2>
+<p>Bilangan bulat N dan M (2&le;N,M&le;5). N menyatakan lebar gambar dan M menyatakan panjang gambar yang diterima. Pada baris selanjutnya merupakan matriks berukuran NxM berisi karakter dari A..Z inklusif yang menunjukan warna citra yang berhasil terdeteksi</p>
+
+<!-- format output -->
+<h2>PETUNJUK KELUARAN</h2>
+<p>Jika citra merupakan zebra cross outputkan 'Ya'. Dan outputkan 'Tidak' jika sebaliknya.</p>
+
+<!-- sample input -->
+<div id="sampleinput">
+<h2>CONTOH MASUKAN 1</h2>
+<pre class="io">
+3 4
+XOXO
+XOXO
+XOXO
+</pre>
+</div>
+
+<!-- sample output -->
+<div id="sampleoutput">
+<h2>CONTOH KELUARAN 1</h2>
+<pre class="io">
+Ya
+</pre>
+</div>
+
+<!-- sample input -->
+<div id="sampleinput">
+<h2>CONTOH MASUKAN 2</h2>
+<pre class="io">
+3 3
+XOOO
+XOOO
+XOOO
+</pre>
+</div>
+
+<!-- sample output -->
+<div id="sampleoutput">
+<h2>CONTOH KELUARAN 2</h2>
+<pre class="io">
+Tidak
+</pre>
+</div>
+
+</div></td>
+</tr></tbody>
+</table>
+</center>
+</body></html>

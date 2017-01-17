@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+div#exp
+{
+	 border: 1px solid #0cc;
+	 background: #adc;
+	 padding: 5px;
+	 margin-bottom: 1em;
+}
+
+div#warn
+{
+	 border: 1px solid #900;
+	 background: #d22;
+	 padding: 5px;
+}
+
+.code
+{
+	 font-family: "Courier New", monospace;
+	 font-size: 12pt;
+}
+
+.bold
+{
+	 font-weight: bold;
+}
+
+pre.io
+{
+	 border: 1px solid #ccc;
+	 background: white;
+	 padding: 5px;
+}
+
+pre.code
+{
+	 border: 1px solid #ccc;
+	 background: white;
+	 padding: 5px;
+	 margin-left: 30px;
+}
+
+body
+{
+	 background-color: #FFFFCC;
+	 font-size: 12pt;
+	 font-family: verdana;
+	 margin: 15px;
+	 padding: 15px;
+}
+
+h1
+{
+	 text-align: center;
+	 font-family: times, "times new roman";
+	 font-size: 18pt;
+}
+
+h2
+{
+	 font-size: 12pt;
+	 font-family: garamond, verdana, arial;
+	 margin-top: 30px;
+}
+
+h3
+{
+	 font-size: 12pt;
+	 font-family: garamond, verdana, arial;
+	 margin-top: 0px;
+}
+
+p
+{
+	 text-align: justify;
+	 line-height: 1.5em;
+}
+
+hr
+{
+	 text-align: left;
+	 width: 10%;
+}
+
+table#header
+{
+	 width: 100%;
+	 font-family: garamond, arial, verdana;
+	 font-size: 12pt;
+}
+
+table#header td.judul
+{
+	 text-align: right;
+	 font-weight: bold;
+}
+
+table#header td
+{
+	 padding: 0px 5px 0px 5px;
+	 width: 50%;
+}
+
+</style><meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Cookie Run</title>
+</head>
+
+<body>
+<center>
+<table cellpadding="20" width="100%">
+<tbody><tr>
+<td id="Base">
+
+<!-- title -->
+<h1>Cookie Run</h1>
+
+<!-- author -->
+<div id="penulis">Rian Adam Rajagede</div>
+<!-- header -->
+<table id = "header">
+	 <tbody>
+	 <tr>
+		<td class="judul"> Batas <i>Run-time</i>:</td>
+		<td>1 detik / test-case</td>
+	</tr>
+	<tr>
+		 <td class="judul"> Batas Memori:</td>
+		<td>32 MB</td>
+	 </tr>
+</tbody></table>
+
+<!-- problem statement -->
+<div id="problem">
+<h2>DESKRIPSI SOAL</h2>
+<p>Saat pertama kali Bagong bermain Cookie Run di android, Bagong terkejut ketika melihat papan poin, ternyata Gareng sudah terlebih dahulu bermain dan memiliki highscore sebesar X poin. Tentu Bagong tidak mau kalah.</p>
+<p>
+Untuk menyederhanakan, Cookie Run adalah permainan di mana dalam sekali main kita harus memilih satu dari N karakter pemain berupa cookie. Cookie tersebut harus berlari melewati halang rintang dan mengumpulkan jelly dan koin sebanyak-banyaknya hingga kehabisan energi. Satu jelly bernilai satu poin dan hanya akan diakumulasi dalam satu kali main. Artinya ketika kita main untuk kedua kalinya, total poin kembali jadi nol. Poin tertinggi selama kita bermain akan tercatat di papan poin sebagai highscore.</p>
+
+<img src="image.jpg">
+
+<p>Sedangkan untuk koin, koin bisa dikumpulkan dari beberapa kali main. Karena ini pertama kalinya Bagong bermain, total koin yang dimiliki pada awalnya adalah nol.</p>
+<p>
+Setiap cookie memiliki kemampuan berbeda. Cookie ke i diperkirakan Bagong dalam sekali main mampu untuk mendapatkan poin sebanyak P<sub>i</sub> juga koin sebanyak C<sub>i</sub>. Pemain juga bisa meningkatkan kemampuan seluruh cookienya sebesar U dengan biaya M koin. Sehingga untuk setiap kali pemain meningkatkan kemampuan, kemampuan cookie ke i akan meningkat menjadi P<sub>i</sub> + U dan C<sub>i</sub> + U. Perhatikan contoh di bawah untuk lebih jelas.
+</p>
+<p>Tentukan berapa kali minimal Bagong perlu bermain agar bisa mengalahkan nilai Gareng.</p>
+<p></p>
+
+<!-- format input -->
+<h2>PETUNJUK MASUKAN</h2>
+<p>Baris pertama adalah bilangan bulat X, N, M, dan U seperti yang telah dijelaskan pada soal. N baris selanjutnya masing-masing terdiri dari dua bilangan P<sub>i</sub> dan C<sub>i</sub>. (1 &le; X &le; 20000; 1 &le; N &le; 100; 1 &le; M &le; 1500; 1 &le; U &le; 30; 1 &le; P<sub>i</sub>, C<sub>i</sub> &le; 1000 )</p>
+
+<!-- format output -->
+<h2>PETUNJUK KELUARAN</h2>
+<p>Sebuah bilangan bulat, minimal Bagong harus bermain untuk mengalahkan nilai Gareng.</p>
+
+<!-- sample input -->
+<div id="sampleinput">
+<h2>CONTOH MASUKAN 1</h2>
+<pre class="io">
+120 3 130 10
+110 200
+125 50
+101 120
+</pre>
+</div>
+
+<!-- sample output -->
+<div id="sampleoutput">
+<h2>CONTOH KELUARAN 1</h2>
+<pre class="io">
+1
+</pre>
+</div>
+
+<!-- sample input -->
+<div id="sampleinput">
+<h2>CONTOH MASUKAN 2</h2>
+<pre class="io">
+120 3 90 10
+110 20
+112 10
+115 30
+</pre>
+</div>
+
+<!-- sample output -->
+<div id="sampleoutput">
+<h2>CONTOH KELUARAN 2</h2>
+<pre class="io">
+4
+</pre>
+</div>
+
+<h2>PETUNJUK</h2>
+<p>Pada contoh pertama Bagong bisa memilih cookie kedua dan dalam sekali main Bagong akan mengalahkan nilai tertinggi Gareng, dengan nilai 125. Sedangkan pada contoh kedua, Bagong minimal harus bermain sebanyak 4 kali dengan SALAH SATU urutan penggunaan cookienya ialah:</p>
+<p>- pertama, Bagong menggunakan cookie ke-3 sebanyak tiga kali main (Bagong akan mendapatkan highscore 115 dan koin sebanyak 90)</p>
+<p>- lalu Bagong meningkatkan kemampuan semua cookienya sebesar 10, menjadi {120 30; 122 20; 125 40}.</p>
+<p>- berikutnya Bagong menggunakan cookie 2 untuk mengalahkan highscore Gareng (nilai Bagong 122).
+</p>
+<p>Bagi Anda yang ingin tahu lebih detail game ini seperti apa, Cookie Run bisa download langsung di Google Play Store di smartphone Android Anda. Tapi kami memperingatkan, jangan mainkan game tersebut saat lomba berlangsung atau akan butuh waktu lama bagi Anda untuk kembali mengerjakan soal.
+</p>
+
+</div></td>
+</tr></tbody>
+</table>
+</center>
+</body></html>
