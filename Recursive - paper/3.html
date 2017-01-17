@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      .code
+      {
+      	 font-family: "Courier New", monospace;
+      	 font-size: 12pt;
+      }
+
+      pre.code
+      {
+      	 border: 1px solid #ccc;
+      	 background: white;
+      	 padding: 5px;
+      	 margin-left: 30px;
+      }
+
+      body
+      {
+      	 background-color: #e3e3e3;
+      	 font-size: 12pt;
+      	 font-family: verdana;
+      	 margin: 15px;
+      	 padding: 15px;
+      }
+
+      h1
+      {
+      	 text-align: center;
+      	 font-family: times, "times new roman";
+      	 font-size: 18pt;
+      }
+
+      h2
+      {
+      	 font-size: 12pt;
+      	 font-family: garamond, verdana, arial;
+      	 margin-top: 30px;
+      }
+
+      h3
+      {
+      	 font-size: 12pt;
+      	 font-family: garamond, verdana, arial;
+      	 margin-top: 0px;
+      }
+
+      p
+      {
+      	 text-align: justify;
+      	 line-height: 1.5em;
+      }
+
+      table#header
+      {
+      	 width: 100%;
+      	 font-family: garamond, arial, verdana;
+      	 font-size: 12pt;
+      }
+
+      table#header td.judul
+      {
+      	 text-align: right;
+      	 font-weight: bold;
+      }
+
+      table#header td
+      {
+      	 padding: 0px 5px 0px 5px;
+      	 width: 50%;
+      }
+      #Base
+      {
+        background-color: #f6f6f6;
+      }
+    </style>
+    <title>Problem 3</title>
+  </head>
+  <body>
+    <center>
+      <table cellpadding="20" width="100%">
+        <tbody><tr>
+          <td id="Base"  >
+
+          <h1>Problem 3</h1>
+          <div id="penulis"></div>
+
+          <!--<h2>INSTRUCTION</h2>-->
+          <p>Perhatikan kode di bawah ini:</p>
+
+          <pre class="code">
+function brokoli(x,y: integer): integer;
+begin
+    if ((x = 0) and (y = 0)) then brokoli := 0
+    else if (x > y) then
+    begin
+        if (x > -y) then brokoli := brokoli(x – 1, y) + 1
+        else brokoli := brokoli(x, y+1) + 1;
+    end
+    else
+    begin
+        if (x > -y) then brokoli := brokoli(x, y – 1) + 1
+        else brokoli:= brokoli(x + 1, y) + 1;
+    end;
+end;
+</pre>
+
+          <p>Berapakah nilai keluaran dari pemanggilan brokoli(9, 13)?</o>
+
+        </td>
+        </tr></tbody>
+      </table>
+    </center>
+  </body>
+</html>
